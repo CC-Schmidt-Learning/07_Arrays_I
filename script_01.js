@@ -21,12 +21,23 @@
 // []-->Arrays, Indexe 
 
 
-/* For - Schleifen, als allg. Wiederholungs-Struktur*/
-// i++ = Inkrement (untere Grenze --> obere Grenze)
-for (let i=0; i < 4; i ++) 
-{
-    output("index i: " +i)
-};
+//  /* For - Schleifen, als allg. Wiederholungs-Struktur*/
+// // i++ = Inkrement (untere Grenze --> obere Grenze)
+// for (let i=0; i < 4; i ++) 
+// {
+//     output("index i: " +i)
+// };
+
+//  // i-- Dekrement (obere Grenze --> untere Grenze)
+//  for (let i = 10; i > 0; i--) {
+//     output("index i: " + i);
+// };
+
+// // Inkrement (var. Schrittweite)
+
+// for (let i = 0; i <= 900; i+=10) {
+//     output("index i: " + i);
+// }
 
 
 /*** 01. Funktionalität mit Einzelparametern */
