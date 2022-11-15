@@ -3,19 +3,41 @@
 /* Die Satzbau-Maschine | Arrays */
 
 
+// let arr;
+// //arr=new Array(); //Konstruktur 
+// arr=[];
+// arr=[2,7,11,4];
+// arr=[false,true,false];
+// arr=["Ich","bin","Max","Mütze"];
+
+// output(arr);
+// output(arr.lenght); //Anzahl der Elemente
+// output(arr[0]); // Index 0, 1. Position
+// output(array[3]); // letzte Position /konkret
+// output(arr[arr.length-1]); // letzte Pos. / allgmein 
+
+// () --> Parameter, Tests
+// {} -->Codeblöcke 
+// []-->Arrays, Indexe 
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
 
-
 output(getSentence("Ich","bin","Max","Mütze"));
-function getSentence(word1,word2,word3,word4){
-const gap   =" ";
-const punct =".";
-let str     = word1 + gap +
-              word2 + gap + 
-              word3 + gap + 
-              word4 + punct;
+output(getSentence("Ich","bin","der","coole","Max","Mütze"));
+output(getSentence("Ich","bin","die","coole","Maxine","Mützin"));
+
+//more of the same
+
+function getSentence(word1,word2,word3,word4,word5,word6){
+const GAP   =" ";
+const PUNCT =".";
+let str     = word1 + GAP +
+              word2 + GAP + 
+              word3 + GAP + 
+              word4 + GAP +
+              word5 + GAP +
+              word6 + PUNCT;
 
 return str;
 };
