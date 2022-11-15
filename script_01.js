@@ -20,12 +20,21 @@
 // {} -->Codeblöcke 
 // []-->Arrays, Indexe 
 
+
+/* For - Schleifen, als allg. Wiederholungs-Struktur*/
+// i++ = Inkrement (untere Grenze --> obere Grenze)
+for (let i=0; i < 4; i ++) 
+{
+    output("index i: " +i)
+};
+
+
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
 
-output(getSentence("Ich","bin","Max","Mütze"));
-output(getSentence("Ich","bin","der","coole","Max","Mütze"));
-output(getSentence("Ich","bin","die","coole","Maxine","Mützin"));
+// output(getSentence("Ich","bin","Max","Mütze"));
+// output(getSentence("Ich","bin","der","coole","Max","Mütze"));
+// output(getSentence("Ich","bin","die","coole","Maxine","Mützin"));
 
 //more of the same
 
