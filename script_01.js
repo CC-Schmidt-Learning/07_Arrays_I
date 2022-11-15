@@ -29,19 +29,38 @@ output(getSentence("Ich","bin","die","coole","Maxine","Mützin"));
 
 //more of the same
 
-function getSentence(word1,word2,word3,word4,word5,word6){
-const GAP   =" ";
-const PUNCT =".";
-let str     = word1 + GAP +
-              word2 + GAP + 
-              word3 + GAP + 
-              word4 + GAP +
-              word5 + GAP +
-              word6 + PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6){
+// const GAP   =" ";
+// const PUNCT =".";
+// let str     = word1 + GAP +
+//               word2 + GAP + 
+//               word3 + GAP + 
+//               word4 + GAP +
+//               word5 + GAP +
+//               word6 + PUNCT;
 
-return str;
-};
+// return str;
+// };
 
+/* 01a. Funktionalität mit Array 1 */
+
+//Kritik | Überlegung 
+// word 1, word 2, ... WordN :: Semantische Struktur 
+//arr[0], arr[1], .... array[N] :: Nummerische Struktur
+//--> Transformation eines semantischen Problems in ein Nummerisches
+output(getSentenceArr(["Ich","bin","die","brave","Maxine","Mützin"]))
+function getSentenceArr(arr){
+    const GAP   =" ";
+    const PUNCT =".";
+    let str     = arr[0] + GAP +
+                  arr[1] + GAP + 
+                  arr[2] + GAP + 
+                  arr[3] + GAP +
+                  arr[4] + GAP +
+                  arr[5] + PUNCT;
+    
+    return str;
+    };
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
