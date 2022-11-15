@@ -38,7 +38,34 @@
 // for (let i = 0; i <= 900; i+=10) {
 //     output("index i: " + i);
 // }
+// let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+// for (let i=0; i < arr.length; i ++) 
+// {
+//     output(arr[i]); // i als Index des Arrays 
+// };
 
+/*
+1. Einer Variablen kann Ihr eigener Wert zugewiesen werden.
+Solange die Variable existiert, bleibt dieser erhalten.
+hier: Aufsummierung
+*/
+
+/* Zu "Fuß" - DRY !!! */
+// let a = 0; // Anfangswert
+// output("inhalt von a: " + a);
+// a = a + 1;  // a = 0 + 1
+// output("inhalt von a: " + a);
+// a = a + 1;  // a = 1 + 1
+// output("inhalt von a: " + a);
+// a = a + 1;  // a = 2 + 1
+// output("inhalt von a: " + a);
+
+// let a = 0;
+// for (let i=0; i <10; i ++) 
+// {
+//     output("in der Loop: " + a); // i als Index des Arrays 
+//     a=a+1;
+// };
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
@@ -68,19 +95,34 @@
 // word 1, word 2, ... WordN :: Semantische Struktur 
 //arr[0], arr[1], .... array[N] :: Nummerische Struktur
 //--> Transformation eines semantischen Problems in ein Nummerisches
-output(getSentenceArr(["Ich","bin","die","brave","Maxine","Mützin"]))
-function getSentenceArr(arr){
+//output(getSentenceArr(["Ich","bin","die","brave","Maxine","Mützin"]))
+// function getSentenceArr(arr){
+//     const GAP   =" ";
+//     const PUNCT =".";
+//     let str     = arr[0] + GAP +
+//                   arr[1] + GAP + 
+//                   arr[2] + GAP + 
+//                   arr[3] + GAP +
+//                   arr[4] + GAP +
+//                   arr[5] + PUNCT;
+    
+//     return str;
+//     };
+
+/* Funktionalität mit Array 2 */ 
+output(getSentenceArr2(["Ich","bin","die","brave","Maxine","Mützin"]))
+function getSentenceArr2(arr){
     const GAP   =" ";
     const PUNCT =".";
-    let str     = arr[0] + GAP +
-                  arr[1] + GAP + 
-                  arr[2] + GAP + 
-                  arr[3] + GAP +
-                  arr[4] + GAP +
-                  arr[5] + PUNCT;
-    
-    return str;
+    let str     = "";
+for (let i=0; i <arr.length; i ++) 
+{  
+    str=str+arr[i]+GAP;
+};
+//    str=str.trim();
+    return str + PUNCT;
     };
+
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
