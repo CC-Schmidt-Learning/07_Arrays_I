@@ -110,17 +110,26 @@ hier: Aufsummierung
 //     };
 
 /* Funktionalität mit Array 2 */ 
+
 output(getSentenceArr2(["Ich","bin","die","brave","Maxine","Mützin"]))
-function getSentenceArr2(arr){
+function getSentenceArr2(arr)
+{
     const GAP   =" ";
     const PUNCT =".";
     let str     = "";
+
 for (let i=0; i <arr.length; i ++) 
-{  
-    str=str+arr[i]+GAP;
-};
-//    str=str.trim();
-    return str + PUNCT;
+{    
+    if (i < arr.length -1) {
+    str += arr[i] + GAP;
+} else {
+    str += arr[i]  +PUNCT;
+}
+    
+}
+
+return str;
+ 
     };
 
 
